@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.home-img {
+    display: inline-block;
+    margin: 4rem auto;
+    border-radius: 50%;
+}
+
+.home-img img {
+    width: 32vw;
+    height: 534px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home-content {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 40px;
+    width: 50%;
+    height: auto;
+    position: relative;
+    transform: translateY(-23%);
+}
+
+.home-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #d62f2f;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+
+.social-icon{
+margin-bottom:20px;
+}
+
+.social-icon a {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 3rem;
+    border: 0.2rem solid #d62f2f;
+    margin: 1.5rem;
+    transition: all 0.3 ease;
+    color: #d62f2f;
+    line-height: 4rem;
+    text-align: center;
+}
+.social-icon a:hover {
+    transform: scale(1.3) translateY(-5px);
+    background-color: #d62f2f;
+    box-shadow: 0 0 25px #d62f2f;
+    color: black;
+}
+.btn{
+    display: inline-block;
+    width: max-content;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #d62f2f;
+    font-weight: 600;
+    border: 2px solid #d62f2f;
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+
+    .btn:hover{
+        background-color: #d62f2f;
+        color: black;
+        box-shadow: 0 0 25px #d62f2f;
+    }
+
+    @media (max-width:510px) {
+        
+        .home-img{
+            display: block;
+            height: 700px;
+        }
+        .home-img img{
+            width: 100%;
+            object-fit:contain ;
+            height: 500px;
+
+
+        }
+        .home-content{
+            display: block;
+            width: 100%;
+        }
+    }
